@@ -1,0 +1,9 @@
+@import "./util/mixins";
+
+.navBar {
+  @include Navbar();
+}
+
+body {
+  background-color: gray;
+}

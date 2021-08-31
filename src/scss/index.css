@@ -1,0 +1,249 @@
+.navBar {
+  background-color: white;
+}
+.navBar .openButton {
+  font-size: 300%;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+.navBar .openButton .icon {
+  margin-block: auto;
+}
+.navBar .openButton input {
+  position: absolute;
+  margin: 0;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+.navBar .navContainer {
+  background-color: #e8e8e8;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: transform 300ms ease-in-out;
+}
+.navBar .navContainer.open {
+  transform: translateX(0%);
+}
+.navBar .navContainer.open .closeButton {
+  transform: translateX(calc(50% + 2rem)) rotateZ(180deg);
+}
+.navBar .navContainer.open .links ul li {
+  transform: translateX(0%);
+}
+.navBar .navContainer.open .links ul li:nth-child(1) {
+  transition-delay: 100ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(2) {
+  transition-delay: 200ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(3) {
+  transition-delay: 300ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(4) {
+  transition-delay: 400ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(5) {
+  transition-delay: 500ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(6) {
+  transition-delay: 600ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(7) {
+  transition-delay: 700ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(8) {
+  transition-delay: 800ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(9) {
+  transition-delay: 900ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(10) {
+  transition-delay: 1000ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(11) {
+  transition-delay: 1100ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(12) {
+  transition-delay: 1200ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(13) {
+  transition-delay: 1300ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(14) {
+  transition-delay: 1400ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(15) {
+  transition-delay: 1500ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(16) {
+  transition-delay: 1600ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(17) {
+  transition-delay: 1700ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(18) {
+  transition-delay: 1800ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(19) {
+  transition-delay: 1900ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(20) {
+  transition-delay: 2000ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(21) {
+  transition-delay: 2100ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(22) {
+  transition-delay: 2200ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(23) {
+  transition-delay: 2300ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(24) {
+  transition-delay: 2400ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(25) {
+  transition-delay: 2500ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(26) {
+  transition-delay: 2600ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(27) {
+  transition-delay: 2700ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(28) {
+  transition-delay: 2800ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(29) {
+  transition-delay: 2900ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(30) {
+  transition-delay: 3000ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(31) {
+  transition-delay: 3100ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(32) {
+  transition-delay: 3200ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(33) {
+  transition-delay: 3300ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(34) {
+  transition-delay: 3400ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(35) {
+  transition-delay: 3500ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(36) {
+  transition-delay: 3600ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(37) {
+  transition-delay: 3700ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(38) {
+  transition-delay: 3800ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(39) {
+  transition-delay: 3900ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(40) {
+  transition-delay: 4000ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(41) {
+  transition-delay: 4100ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(42) {
+  transition-delay: 4200ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(43) {
+  transition-delay: 4300ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(44) {
+  transition-delay: 4400ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(45) {
+  transition-delay: 4500ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(46) {
+  transition-delay: 4600ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(47) {
+  transition-delay: 4700ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(48) {
+  transition-delay: 4800ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(49) {
+  transition-delay: 4900ms;
+}
+.navBar .navContainer.open .links ul li:nth-child(50) {
+  transition-delay: 5000ms;
+}
+.navBar .navContainer.closed {
+  transform: translateX(-100%);
+}
+.navBar .navContainer .closeButton {
+  position: absolute;
+  background-color: white;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  padding: 0.5rem;
+  top: calc(50% - 33px);
+  right: 2rem;
+  font-size: 300%;
+  transition: transform 350ms ease-in-out;
+}
+.navBar .navContainer .links {
+  font-size: 125%;
+  height: 60vh;
+  margin-block: 5rem;
+}
+.navBar .navContainer .links ul {
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.navBar .navContainer .links ul li {
+  margin: 1rem;
+  padding-inline: 4rem;
+  font-size: 1.5em;
+  transition: transform 450ms ease;
+  transform: translateX(-100%);
+}
+.navBar .navContainer .links ul li a {
+  color: black;
+  text-decoration: none;
+}
+.navBar .navContainer .footer {
+  font-size: 175%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+.navBar .navContainer .footer ul {
+  margin: 2rem;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+.navBar .navContainer .footer ul li a {
+  color: black;
+}
+
+body {
+  background-color: gray;
+}/*# sourceMappingURL=index.css.map */

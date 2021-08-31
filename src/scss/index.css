@@ -187,6 +187,9 @@
 .navBar .navContainer.open .links ul li:nth-child(50) {
   transition-delay: 5000ms;
 }
+.navBar .navContainer.open .footer {
+  transform: translateY(0);
+}
 .navBar .navContainer.closed {
   transform: translateX(-100%);
 }
@@ -232,6 +235,8 @@
   position: absolute;
   bottom: 0;
   width: 100%;
+  transform: translateY(100px);
+  transition: transform 500ms ease;
 }
 .navBar .navContainer .footer ul {
   margin: 2rem;

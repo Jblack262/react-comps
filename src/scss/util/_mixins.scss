@@ -44,6 +44,9 @@
           }
         }
       }
+      .footer {
+        transform: translateY(0);
+      }
     }
     &.closed {
       transform: translateX(-100%);
@@ -96,6 +99,9 @@
       position: absolute;
       bottom: 0;
       width: 100%;
+
+      transform: translateY(100px);
+      transition: transform 500ms ease;
       ul {
         margin: 2rem;
         padding: 0;

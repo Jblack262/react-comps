@@ -1,4 +1,5 @@
 @import "./util/mixins";
+@import "./themes/defaultTheme";
 
 .navBar {
   @include Navbar();
@@ -6,4 +7,8 @@
 
 body {
   background-color: gray;
+}
+
+.card {
+  @include card();
 }

@@ -1,5 +1,9 @@
 @mixin Navbar() {
   background-color: white;
+  &,
+  * {
+    z-index: 100;
+  }
   .openButton {
     font-size: 300%;
     display: grid;
@@ -113,5 +117,28 @@
         }
       }
     }
+  }
+}
+
+@mixin card() {
+  background: #333;
+  color: #eee;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 2rem;
+  max-width: 15rem;
+  height: 15rem;
+  position: relative;
+  h3 {
+    margin: 0;
+  }
+  .content {
+    margin: 2rem 1rem;
+  }
+  .name {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2rem;
   }
 }

@@ -7,7 +7,7 @@ import {cardInfo} from "./util/cardInfo";
 function App() {
     
     return (
-        <div>
+        <div id="App">
             <Navbar />
             <CardGrid content={cardInfo}/>
         </div>

@@ -1,12 +1,22 @@
 import React from 'react'
 
-function Card(props) {
-    const {card} = props;
+function Card({card, cName, onHover, test}) {
+    const  {title, content, name} = card;
+    const [isHovering, setHovering] = React.useState(false);
+
+    const handleHover = (id) => {
+        onHover(id + 1);
+        
+        setHovering(true);
+    }
+
     return (
-        <div className="card">
-            <h3>{card.title}</h3>
-            <p className="content">{card.content}</p>
-            <p className="name">{card.name}</p>
+        <div>
+            <div className={cName + (isHovering ? " hovering" : "")} onMouseOver={() => {handleHover(test)}} onMouseLeave={() => {setHovering(false)}}>
+                <h3>{title}</h3>
+                <p className="content">{content}</p>
+                <p className="name">{name}</p>
+            </div>
         </div>
     )
 }

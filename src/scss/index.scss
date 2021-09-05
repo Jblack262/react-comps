@@ -1,14 +1,8 @@
+@import "./base/index";
+@import "./base/global";
+@import "./base/index";
 @import "./util/mixins";
 @import "./themes/defaultTheme";
-
-.navBar {
-  @include Navbar();
-}
-
-body {
-  background-color: gray;
-}
-
-.card {
-  @include card();
-}
+@import "./components/cardGrid";
+@import "./components/card";
+@import "./components/sideNav";

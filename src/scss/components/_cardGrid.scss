@@ -1,0 +1,13 @@
+.cardGrid {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 2rem;
+  padding-bottom: 0;
+  margin-top: 5rem;
+  @media screen and (min-width: 768px) {
+    & > div {
+      width: 9.5rem;
+    }
+  }
+}

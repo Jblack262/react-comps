@@ -23,18 +23,18 @@ function Navbar() {
                 </div>
                 <div className="links">
                     <ul>
-                        <li><a href="https://www.youtube.com">Page 1</a></li>
-                        <li><a href="https://www.youtube.com">Page 2</a></li>
-                        <li><a href="https://www.youtube.com">Page 3</a></li>
-                        <li><a href="https://www.youtube.com">Page 4</a></li>
-                        <li><a href="https://www.youtube.com">Page 5</a></li>
+                        <li><a href="">Page 1</a></li>
+                        <li><a href="">Page 2</a></li>
+                        <li><a href="">Page 3</a></li>
+                        <li><a href="">Page 4</a></li>
+                        <li><a href="">Page 5</a></li>
                     </ul>
                 </div>
                 <div className="footer">
                     <ul>
-                        <li><a href="https://www.youtube.com"><AiFillFacebook/></a></li>
-                        <li><a href="https://www.youtube.com"><AiFillInstagram/></a></li>
-                        <li><a href="https://www.youtube.com"><AiFillGithub/></a></li>
+                        <li><a href=""><AiFillFacebook/></a></li>
+                        <li><a href=""><AiFillInstagram/></a></li>
+                        <li><a href=""><AiFillGithub/></a></li>
                     </ul>
                 </div>
             </div>

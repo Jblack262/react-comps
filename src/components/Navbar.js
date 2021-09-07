@@ -10,7 +10,7 @@ function Navbar() {
         setActive(!isOpen);
         console.log("click")
     }
-
+    
     return (
         <section className="navBar">
             <div className="openButton">
@@ -27,7 +27,7 @@ function Navbar() {
                         <li><a href="#App">Page 2</a></li>
                         <li><a href="#App">Page 3</a></li>
                         <li><a href="#App">Page 4</a></li>
-                        <li><a href="#App">Page 5</a></li>
+                        <li><a href="/login">Login</a></li>
                     </ul>
                 </div>
                 <div className="footer">

@@ -1,15 +1,19 @@
-import React from 'react'
+import React from 'react';
 
-import Navbar from './components/Navbar';
-import CardGrid from './components/CardGrid';
-import {cardInfo} from "./util/cardInfo";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
+import Home from './components/pages/Home';
+import Login from './components/pages/Login';
 function App() {
     
     return (
         <div id="App">
-            <Navbar />
-            <CardGrid content={cardInfo}/>
+            <Router>
+                <Switch>
+                    <Route path="/" exact component={() => <Home />} />
+                    <Route path="/login" exact component={() => <Login />} />
+                </Switch>
+            </Router>
         </div>
     )
 }

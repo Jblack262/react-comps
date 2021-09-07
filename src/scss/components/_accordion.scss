@@ -1,0 +1,70 @@
+.accordionMenu {
+  @include absolute-center;
+
+  margin: 3rem 0;
+  width: 300px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  &,
+  * {
+    text-decoration: none;
+  }
+  .item {
+    border-top: 2px solid #2980b9;
+    overflow: hidden;
+    .btn {
+      display: block;
+      padding: 16px 20px;
+      background-color: #3498db;
+      color: white;
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1rem;
+        height: 1rem;
+        background-color: inherit;
+        left: 1rem;
+        bottom: -0.5rem;
+        transform: rotate(45deg);
+        z-index: 1;
+      }
+    }
+    &:target .smenu {
+      max-height: 20rem;
+    }
+    .smenu {
+      display: flex;
+      flex-direction: column;
+      background-color: #444;
+      overflow: hidden;
+
+      max-height: 0;
+
+      transition: max-height 0.5s;
+      transform-origin: top;
+      a {
+        display: block;
+        padding: 16px 26px;
+        color: white;
+        font-size: 14px;
+        margin: 4px 0;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 5px;
+          height: 100%;
+          background-color: #3498db;
+          left: 0;
+          top: 0;
+          transition: opacity 150ms ease;
+          opacity: 0;
+        }
+        &:hover::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

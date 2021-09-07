@@ -486,6 +486,13 @@
   }
 }
 
+@mixin absolute-center {
+  margin-inline: 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 //flexbox toolkit
 @mixin flex-column {
   display: flex;

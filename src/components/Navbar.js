@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import {GiHamburgerMenu} from 'react-icons/gi';
 import {GrClose} from 'react-icons/gr';
 import {AiFillGithub, AiFillFacebook, AiFillInstagram} from 'react-icons/ai';
+import {Link} from 'react-router-dom';
 
 function Navbar() {
     const [isOpen, setActive] = useState(false);
@@ -27,7 +28,7 @@ function Navbar() {
                         <li><a href="#App">Page 2</a></li>
                         <li><a href="#App">Page 3</a></li>
                         <li><a href="#App">Page 4</a></li>
-                        <li><a href="/login">Login</a></li>
+                        <li><Link to="/login">Login</Link></li>
                     </ul>
                 </div>
                 <div className="footer">

@@ -1,0 +1,28 @@
+.errorPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 1rem;
+  color: white;
+  h1 {
+    font-size: 300%;
+  }
+  button {
+    color: inherit;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: 0.25rem solid;
+    font-size: 125%;
+    background: none;
+    border-radius: 0.5rem;
+    &:hover {
+      box-shadow: 0 0 10px white;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+}

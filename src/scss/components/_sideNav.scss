@@ -1,10 +1,12 @@
 .navBar {
-  background-color: white;
+  color: $clr-accent-1;
   &,
   * {
     z-index: 100;
   }
   .openButton {
+    color: $clr-accent-1;
+
     font-size: 300%;
     display: grid;
     place-items: center;
@@ -26,7 +28,7 @@
     }
   }
   .navContainer {
-    background-color: rgb(232, 232, 232);
+    background-color: $clr-secondary-0;
     position: fixed;
     height: 100%;
     top: 0;
@@ -57,7 +59,7 @@
     }
     .closeButton {
       position: absolute;
-      background-color: white;
+      background-color: $clr-secondary-1;
       display: grid;
       place-items: center;
       border-radius: 50%;
@@ -68,6 +70,9 @@
       font-size: 300%;
 
       transition: transform 350ms ease-in-out;
+      .icon path {
+        stroke: $clr-accent-1;
+      }
     }
 
     .links {
@@ -92,8 +97,26 @@
           transform: translateX(-100%);
 
           a {
-            color: black;
+            color: $clr-accent-1;
             text-decoration: none;
+            position: relative;
+            &::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 2px;
+              bottom: 0;
+              left: 0;
+              background-color: $clr-accent-1;
+
+              transition: transform 200ms ease 100ms;
+              transform-origin: left;
+              transform: scaleX(0.1);
+            }
+            &:hover::after,
+            &:focus::after {
+              transform: scaleX(1);
+            }
           }
         }
       }
@@ -113,7 +136,7 @@
         display: flex;
         justify-content: space-around;
         li a {
-          color: black;
+          color: $clr-accent-1;
         }
       }
     }

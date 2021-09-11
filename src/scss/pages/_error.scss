@@ -7,12 +7,18 @@
   gap: 1rem;
   color: white;
   max-width: 100vw;
+  text-align: center;
   h1 {
     font-size: 300%;
+    margin-inline: 1rem;
+  }
+  p {
+    margin-inline: 1rem;
   }
   button {
     color: inherit;
     padding: 0.5rem 1rem;
+    margin: 0 1rem;
     outline: none;
     border: 0.25rem solid;
     font-size: 125%;
@@ -26,15 +32,16 @@
       text-decoration: none;
     }
   }
-  &::after {
-    content: '404';
-    position: absolute;
-    // inset: 0;
-    width: auto;
-    height: auto;
-    transform: scale(20);
-    z-index: -1;
-    color: #333;
-    text-shadow: 0 0 2px #222;
+  @media screen and (min-width: 550px) {
+    &::after {
+      overflow: hidden;
+      content: "404";
+      position: absolute;
+      max-width: 100vw;
+      font-size: 20rem;
+      z-index: -1;
+      color: #333;
+      text-shadow: 0 0 40px #262626;
+    }
   }
 }
